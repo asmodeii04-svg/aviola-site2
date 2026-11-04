@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Раздел о телевизионных услугах и возможностях просмотра контента через сеть Aviola.NET.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbfdff">
+  <title>IPTV — Aviola.NET</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Ставим сохранённую тему до отрисовки страницы, чтобы не было мигания -->
+  <script>
+    try {
+      var savedTheme = localStorage.getItem('aviola-theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') document.documentElement.dataset.theme = savedTheme;
+    } catch (error) {}
+  </script>
+</head>
+<body>
+  <div class="topline"></div>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">A</span>
+        <span class="brand-name">Aviola<span>.NET</span></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основное меню">
+        <a href="news.html">Новости</a>
+        <a href="iptv.html" aria-current="page">IPTV</a>
+        <a href="resources.html">Ресурсы сети</a>
+        <a href="subscribers.html">Абонентам</a>
+        <a href="geography.html">География сети</a>
+        <a href="about.html">О провайдере</a>
+        <a class="nav-cta" href="#">Личный кабинет</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- TODO: заменить "#" на адрес личного кабинета (здесь и в меню выше) -->
+        <a class="nav-cta" href="#">Личный кабинет</a>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Главная</a> / IPTV</div>
+        <span class="eyebrow">Aviola.NET</span>
+        <h1>Телевидение в&nbsp;<em>цифровом формате</em></h1>
+        <p>Раздел о&nbsp;телевизионных услугах и&nbsp;возможностях просмотра контента через сеть Aviola.NET.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="info-grid">
+          <article class="info-card">
+            <div class="iconbox">✦</div>
+            <h3>Удобный просмотр</h3>
+            <p>Смотрите любимые передачи на&nbsp;совместимых устройствах.</p>
+          </article>
+          <article class="info-card">
+            <div class="iconbox">✦</div>
+            <h3>Разные устройства</h3>
+            <p>Используйте подходящее оборудование и&nbsp;стабильное подключение к&nbsp;сети.</p>
+          </article>
+          <article class="info-card">
+            <div class="iconbox">✦</div>
+            <h3>Помощь с настройкой</h3>
+            <p>В&nbsp;этом разделе можно разместить инструкции по&nbsp;подключению и&nbsp;настройке IPTV.</p>
+          </article>
+        </div>
+
+        <div class="notice">Примечание: тексты и&nbsp;сведения в&nbsp;этом шаблоне демонстрационные. Перед публикацией замените их на&nbsp;подтверждённую информацию Aviola.NET.</div>
+
+        <div class="callout">
+          <div>
+            <h2>Остались вопросы?</h2>
+            <p>Посмотрите информацию для&nbsp;абонентов или&nbsp;вернитесь на&nbsp;главную страницу.</p>
+          </div>
+          <a class="button" href="subscribers.html">Раздел «Абонентам»&nbsp;→</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Aviola<span>.NET</span></div>
+          <p class="footer-note">Интернет и цифровые сервисы. Информация на сайте является демонстрационным шаблоном и может быть заменена на официальные данные компании.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Разделы</h4>
+          <a href="news.html">Новости</a>
+          <a href="iptv.html">IPTV</a>
+          <a href="resources.html">Ресурсы сети</a>
+        </div>
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <a href="subscribers.html">Абонентам</a>
+          <a href="geography.html">География сети</a>
+          <a href="about.html">О провайдере</a>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Aviola.NET · Демонстрационный HTML/CSS/JS шаблон</div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
